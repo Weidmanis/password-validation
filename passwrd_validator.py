@@ -1,9 +1,7 @@
 import re
 
-# password must consist of upper and lower case letters
-# password also must consist of a number and a special character
-
 print('\n\tPASSWORD VALIDATOR')
+
 # Print conditions
 print("\nTo pass the password test the password must conist of:\n\n\
     - 1 or more CAPITAL letters (A-Z)\n\
