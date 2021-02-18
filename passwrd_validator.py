@@ -15,14 +15,13 @@ print("\nTo pass the password test the password must conist of:\n\n\
 # Ask user to enter the password:
 password = input("\nPlease enter your password to test: ")
 
-
-if re.search(r'(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*-+=_]){8,}',password):
-    print(f"Entered password: '{password}' is STRONG enough!")
-
 # REGEX:
 # ?=.* - at least 1 character in the string
 # {8,} - len(string) is 8 or more characters
 # r'' - raw string
+
+if re.search(r'(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*-+=_]){8,}',password):
+    print(f"Entered password: '{password}' is STRONG enough!")
 
 else: # print which condition is not satisfied
     if len(password) < 8:
